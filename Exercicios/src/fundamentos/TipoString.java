@@ -20,11 +20,26 @@ public class TipoString {
 		var idade = 33;
 		var salario = 1234.12;
 		
+		String maisUmaFrase = "Nome: " + nome + "\nSobrenome: " + sobrenome +
+				"\nIdade: " + idade + 
+				"\nSalario: " + salario + "\n\n";
+		System.out.println(maisUmaFrase);
+		
 		System.out.println("Nome: " + nome + "\nSobrenome: " + sobrenome +
 				"\nIdade: " + idade + 
 				"\nSalario: " + salario + "\n\n");
 		
-		System.out.printf("O %s %s tem %d e ganha %f", nome, sobrenome, idade, salario);
+		System.out.printf("O %s %s tem %d e ganha %.2f", 
+				nome, sobrenome, idade, salario);
 		
+		String frase = String.format("O %s %s tem %d e ganha %.2f", 
+				nome, sobrenome, idade, salario);
+		System.out.println(frase);
+	
+		System.out.println("Frase qualquer".contains("qual"));
+		System.out.println("Frase qualquer".indexOf("qual"));
+		System.out.println("Frase qualquer".substring(6));
+		System.out.println("Frase qualquer".substring(6, 10));
+	
 	}
 }
