@@ -14,13 +14,13 @@ public class DesafioConversaoCorrecao {
 		System.out.print("Digite o primeiro salario: ");
 		//O .replace esta substituindo 'virgula' por 'ponto'
 		//para caso o usuario digite o valor flutuante com virgula.
-		salario1 = scanner.nextLine().replace(",", "."); 
+		salario1 = scanner.next().replace(",", "."); 
 		
 		System.out.print("Digite o segundo salario: ");
-		salario2 = scanner.nextLine().replace(",", "."); 
+		salario2 = scanner.next().replace(",", "."); 
 		
 		System.out.print("Digite o terceiro psalario: ");
-		salario3 = scanner.nextLine().replace(",", "."); 
+		salario3 = scanner.next().replace(",", "."); 
 		
 		double valor1 = Double.parseDouble(salario1);
 		double valor2 = Double.parseDouble(salario2);
