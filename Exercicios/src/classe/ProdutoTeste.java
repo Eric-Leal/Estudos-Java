@@ -1,15 +1,13 @@
 package classe;
 
-import java.util.Scanner;
-
 public class ProdutoTeste {
 
 	public static void main(String[] args) {
 		
-		Produto p1 = new Produto();
-		p1.nome = "Notebook";
-		p1.preco = 4356.99;
-		p1.desconto = 0.25;
+		Produto p1 = new Produto("Notebook", 4356.99, 0.25);
+		//p1.nome = "Notebook";
+		//p1.preco = 4356.99;
+		//p1.desconto = 0.25;
 		
 		var p2 = new Produto();
 		p2.nome = "Caneta";
@@ -19,12 +17,17 @@ public class ProdutoTeste {
 		System.out.println(p2.nome);
 		System.out.println(p1.nome);
 		
-		double precoFinal1 = p1.preco * (1 - p1.desconto);
-		double precoFinal2 = p1.preco * (1 - p1.desconto);
+		//Nesse exemplo ele usa o metodo que esta com nenhum parametro, com os parenteses vazios
+		double precoFinal1 = p1.precoComDesconto();
+		
+		//Nesse ele usa o metodo que tem o parametro de 'double descontoDoGerente'
+		double precoFinal2 = p1.precoComDesconto(0.1); 
 		double mediaCarrinho = ((precoFinal1 + precoFinal2) / 2);
 		
 		System.out.println(precoFinal1);
 		System.out.println(precoFinal2);
 		System.out.printf("Média do carrinho = %.2f", mediaCarrinho);
+		
+		System.out.println();
 	}
 }
