@@ -29,6 +29,7 @@ public class ExercicioForeach {
 		}
 		media = soma / QtdNotas;
 		System.out.println(media);
+		
 		scanner.close();
 	}
 }
