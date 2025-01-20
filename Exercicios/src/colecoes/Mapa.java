@@ -41,7 +41,7 @@ public class Mapa {
 			System.out.println(valor);
 		}
 		System.out.println();
-		System.out.println("Percorrendo cahves e valores");
+		System.out.println("Percorrendo chaves e valores");
 		for (Entry<Integer, String> registro : usuarios.entrySet()) {
 			System.out.print(registro.getKey() + " ==> ");
 			System.out.println(registro.getValue());
